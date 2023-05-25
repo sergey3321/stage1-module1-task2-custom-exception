@@ -7,7 +7,7 @@ public class StudentManager {
 
 
   public Student find(long studentID) {
-      if (studentID > 20) {
+      if (studentID > 12) {
           throw new StudentIdExeptionFromIllegalArgumentException("Could not find student with ID " + studentID);
       }
           return Student.getValueOf(studentID);
